@@ -1,12 +1,22 @@
-from rest_framework import serializers, viewsets
-from .models import Map
+from rest_framework import serializers, viewsets, permissions
+from .models import TeamData
 
-class MapSerializer(serializers.HyperlinkedModelSerializer):
+class TeamDataSerializer(serializers.HyperlinkedModelSerializer):
     
     class Meta:
-        model = Map
+        model = TeamData
         fields = ('map', 'team_score', 'team_position')
+    
+    def create(self, validated_data):
+        team_data = TeamData.objects.create(**validated_data)
+        return team_data
 
-class MapViewSet(viewsets.ModelViewSet):
-    serializer_class = MapSerializer
-    queryset = Map.objects.all()
+    def post(self):
+        return "hello"
+
+class TeamDataViewSet(viewsets.ModelViewSet):
+    serializer_class = TeamDataSerializer
+    queryset = TeamData.objects.all()
+    permission_classes = [
+    permissions.AllowAny
+]

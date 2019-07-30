@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from treasurehunt.api import MapViewSet
+from treasurehunt.api import TeamDataViewSet
 
 router = routers.DefaultRouter()
-router.register(r'treasurehunt', MapViewSet)
+router.register(r'treasurehunt', TeamDataViewSet)
 
 urlpatterns = [
                path('admin/', admin.site.urls),
