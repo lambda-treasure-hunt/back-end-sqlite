@@ -122,8 +122,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+<<<<<<< HEAD
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
                                    'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
                                    ]
 }
+=======
+LOGIN_REDIRECT_URL = '/'
+>>>>>>> 8fde866baf61596b20db899d8b84676386103df9
