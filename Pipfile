@@ -12,6 +12,7 @@ django-mysql = "*"
 django-heroku = "*"
 gunicorn = "*"
 psycopg2 = "*"
+wsgi = "*"
 
 [requires]
 python_version = "3.7"
