@@ -1,0 +1,1 @@
+web: gunicorn mud-treasure-hunt.wsgi --log-level=info --log-file -

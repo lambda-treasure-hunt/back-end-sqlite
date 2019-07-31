@@ -1,7 +1,12 @@
-Django==2.2.3
-djangorestframework==3.10.2
-gunicorn==19.9.0
-psycopg2==2.8.3
-python-dotenv==0.10.3
-pytz==2019.1
-sqlparse==0.3.0
+Collecting freeze
+  Downloading https://files.pythonhosted.org/packages/c2/16/ca9fcd75d8c958b2260d521f18d7e697de5d2133fc68fc968feef4a348b6/freeze-1.0.10.tar.gz
+Collecting six (from freeze)
+  Downloading https://files.pythonhosted.org/packages/73/fb/00a976f728d0d1fecfe898238ce23f502a721c0ac0ecfedb80e0d88c64e9/six-1.12.0-py2.py3-none-any.whl
+Building wheels for collected packages: freeze
+  Building wheel for freeze (setup.py): started
+  Building wheel for freeze (setup.py): finished with status 'done'
+  Created wheel for freeze: filename=freeze-1.0.10-cp37-none-any.whl size=12067 sha256=a3ab107c9734565aee5521c1b3912bbf6a6cd6a1c90e890975f361041ed797fb
+  Stored in directory: /Users/austincole/Library/Caches/pip/wheels/5a/01/6b/b8d944e726b251e0f68a8786a3d26193c16f2883ae6f19c71a
+Successfully built freeze
+Installing collected packages: six, freeze
+Successfully installed freeze-1.0.10 six-1.12.0
