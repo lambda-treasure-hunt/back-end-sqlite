@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-<<<<<<< HEAD
 from rest_framework import routers
 from treasurehunt.api import TeamDataViewSet
 
@@ -23,14 +22,8 @@ router = routers.DefaultRouter()
 router.register(r'treasurehunt', TeamDataViewSet)
 
 urlpatterns = [
-               path('admin/', admin.site.urls),
-               path('api/', include(router.urls)),
-               ]
-=======
-
-urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/', include(router.urls)),
     path('', include('authentication.urls')),
     path('accounts/', include('django.contrib.auth.urls'))
 ]
->>>>>>> 8fde866baf61596b20db899d8b84676386103df9
