@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'treasurehunt',
     'authentication',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -121,4 +122,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+                                   'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
+                                   ]
+}
+
+
 LOGIN_REDIRECT_URL = '/'
+
