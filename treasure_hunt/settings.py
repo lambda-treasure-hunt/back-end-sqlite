@@ -26,7 +26,7 @@ SECRET_KEY = '7w4exos2j(-535u+%d2(_mnm4yz+caw744yf3gs0ys)l^nuv(r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cool-treasure-hunt.herokuapp.com']
 
 
 # Application definition
