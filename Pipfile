@@ -11,6 +11,7 @@ djangorestframework = "*"
 django-mysql = "*"
 dj-database-url = "*"
 gunicorn = "*"
+decouple = "*"
 
 [requires]
 python_version = "3.7"
